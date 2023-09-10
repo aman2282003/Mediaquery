@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .black {
+        background-color: black;
+        padding: 60px 0px;
+      }
+      .parent {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7nznuGDQ30iTPgHPKZW2u58zYvbD8_2AQyg&usqp=CAU");
+        padding: 20px 15px;
+      }
+      .child {
+        display: grid;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+      .child > div {
+        background-color: white;
+        margin: 16px 20px;
+        border-radius: 15px;
+        padding: 35px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .child > div > p {
+        color: rgb(203, 148, 9);
+        font-weight: bold;
+        font-size: 25px;
+      }
+      .child > div > p + p {
+        color: grey;
+        font-weight: 100;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 28px;
+      }
+      @media all and (min-width: 600px) and (max-width: 1000px) {
+        .child {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media all and (max-width: 600px) {
+        .child {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="black">
+      <div class="parent">
+        <div class="child">
+          <div>
+            <h3>Cappuccino</h3>
+            <p>$49</p>
+            <p>
+              Usage of the internet is becoming more common due to rapd advance.
+            </p>
+          </div>
+          <div>
+            <h3>Americano</h3>
+            <p>$49</p>
+            <p>
+              Usage of the internet is becoming more common due to rapd advance.
+            </p>
+          </div>
+          <div>
+            <h3>Cappuccino</h3>
+            <p>$49</p>
+            <p>
+              Usage of the internet is becoming more common due to rapd advance.
+            </p>
+          </div>
+          <div>
+            <h3>Espresso</h3>
+            <p>$49</p>
+            <p>
+              Usage of the internet is becoming more common due to rapd advance.
+            </p>
+          </div>
+          <div>
+            <h3>Macchiato</h3>
+            <p>$49</p>
+            <p>
+              Usage of the internet is becoming more common due to rapd advance.
+            </p>
+          </div>
+          <div>
+            <h3>Mocha</h3>
+            <p>$49</p>
+            <p>
+              Usage of the internet is becoming more common due to rapd advance.
+            </p>
+          </div>
+          <div>
+            <h3>Coffee Latte</h3>
+            <p>$49</p>
+            <p>
+              Usage of the internet is becoming more common due to rapd advance.
+            </p>
+          </div>
+          <div>
+            <h3>Ristretto</h3>
+            <p>$49</p>
+            <p>
+              Usage of the internet is becoming more common due to rapd advance.
+            </p>
+          </div>
+          <div>
+            <h3>Affogato</h3>
+            <p>$49</p>
+            <p>
+              Usage of the internet is becoming more common due to rapd advance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
