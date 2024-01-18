@@ -507,12 +507,7 @@
           <a href="./resume/newresume.pdf" class="resumebtn" target="_blank">Download Resume</a>
         </div>
         <div class="contact-right">
-          <form name ="submit-to-google-sheet">
-            <input type="text" name ="name" placeholder="Enter Your Name" required>
-            <input type="email" name ="email" placeholder="Enter Your Email" required>
-            <textarea name="mesagge" rows="6" placeholder="Enter your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
+
           <span id = "msg"></span>
         </div>
       </div>
